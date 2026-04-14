@@ -47,10 +47,15 @@
         .certification-card {
             transition: all 0.3s ease;
             border: 1px solid #e2e8f0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .certification-card:hover {
             border-color: #3b82f6;
             background: #f8fbff;
+            transform: translateY(-2px);
         }
 
         .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -75,7 +80,6 @@
                     <a href="#skills" class="hover:text-slate-900 transition">Skills</a>
                 </div>
 
-                <!-- Updated Email Link -->
                 <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">
                     Get in Touch
                 </a>
@@ -143,7 +147,6 @@
                         </div>
                         <h3 class="text-xl font-bold mb-3">Adaptive Meal Planner</h3>
                         <p class="text-slate-500 text-sm leading-relaxed mb-6">Hyper-personalized 'Kitchen OS' integrating pantry awareness and grocery automation.</p>
-                        <!-- Direct Prototype Link -->
                         <a href="https://patio-ounce-78097001.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-xl text-xs font-bold hover:bg-orange-600 hover:text-white transition-all border border-orange-100">
                            <i class="fab fa-figma"></i> Open Prototype
                         </a>
@@ -164,7 +167,6 @@
                         </div>
                         <h3 class="text-xl font-bold mb-3">Practo: Trust Framework</h3>
                         <p class="text-slate-500 text-sm leading-relaxed mb-6">Enhancing appointment reliability through AI-verified slots and recovery hubs.</p>
-                        <!-- Direct Prototype Link -->
                         <a href="https://lnkd.in/gYJkgJ86" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-xs font-bold hover:bg-blue-600 hover:text-white transition-all border border-blue-100">
                            <i class="fab fa-figma"></i> Open Prototype
                         </a>
@@ -202,7 +204,6 @@
                         </div>
                         <h3 class="text-xl font-bold mb-3">Fitness App (VitaFit)</h3>
                         <p class="text-slate-500 text-sm leading-relaxed mb-6">Sustaining engagement through personalization, community challenges, and social accountability.</p>
-                         <!-- Direct Prototype Link -->
                          <a href="https://blend-draft-15080245.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-purple-50 text-purple-700 rounded-xl text-xs font-bold hover:bg-purple-600 hover:text-white transition-all border border-purple-100">
                             <i class="fab fa-figma"></i> Open Prototype
                          </a>
@@ -302,22 +303,87 @@
 
                 <div class="relative py-12">
                     <div class="h-px bg-slate-800 w-full"></div>
-                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 px-8 py-2 border border-slate-700 rounded-full text-[10px] font-black text-slate-500 uppercase tracking-[0.4em]">Foundation Years</span>
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 px-8 py-2 border border-slate-700 rounded-full text-[10px] font-black text-slate-500 uppercase tracking-[0.4em]">Internships & Training</span>
                 </div>
 
-                <!-- Internships -->
+                <!-- Expanded Internships Grid -->
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- Eggoz Nutrition -->
                     <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
                         <div>
                             <div class="flex justify-between items-start mb-6">
                                 <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-orange-400 group-hover:bg-orange-400 group-hover:text-white transition">EN</div>
-                                <span class="text-[10px] font-bold text-slate-500">May 2022 — Aug 2022</span>
+                                <span class="text-[10px] font-bold text-slate-500">May 2022 — Jun 2022</span>
                             </div>
                             <h4 class="text-xl font-bold mb-1">Eggoz Nutrition</h4>
                             <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Business Analytics Intern</p>
-                            <ul class="space-y-4 text-sm text-slate-400">
-                                <li class="flex gap-3"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Deployed 4 BI dashboards on Maple Monk Cloud.</span></li>
+                            <ul class="space-y-3 text-sm text-slate-400">
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Deployed 4 BI dashboards on Maple Monk Cloud to improve organizational analytics.</span></li>
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Used SQL and Excel to deliver insights for 6 new dashboards, enhancing data visibility.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Country Holidays -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-blue-400 group-hover:bg-blue-400 group-hover:text-white transition">CH</div>
+                                <span class="text-[10px] font-bold text-slate-500">Feb 2022 — Mar 2022</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">Country Holidays Inn Suites</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Social Media Marketing Intern</p>
+                            <ul class="space-y-3 text-sm text-slate-400">
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Analyzed website metrics to reduce bounce rates and enhance consumer retention.</span></li>
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Boosted consumer engagement across social platforms, increasing brand visibility.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- EduRev -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-emerald-400 group-hover:bg-emerald-400 group-hover:text-white transition">ER</div>
+                                <span class="text-[10px] font-bold text-slate-500">Jan 2021 — Jul 2021</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">EduRev Learning Pvt. Ltd</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Content Analyst Intern</p>
+                            <ul class="space-y-3 text-sm text-slate-400">
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Executed initiatives aligned with user preferences to increase content engagement.</span></li>
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Conducted Excel-based analytics to drive subscription rate recommendations.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CSIR-CSIO -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-purple-400 group-hover:bg-purple-400 group-hover:text-white transition">CS</div>
+                                <span class="text-[10px] font-bold text-slate-500">May 2019 — Jun 2019</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">CSIR-CSIO</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Internship Trainee</p>
+                            <ul class="space-y-3 text-sm text-slate-400">
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Contributed to crop/weed discrimination using image processing techniques.</span></li>
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Implemented KNN classifiers and color-based segmentation for classification accuracy.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The D-Zone -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-red-400 group-hover:bg-red-400 group-hover:text-white transition">DZ</div>
+                                <span class="text-[10px] font-bold text-slate-500">Jun 2019 — Mar 2019</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">The D-Zone</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Software Engineer Intern</p>
+                            <ul class="space-y-3 text-sm text-slate-400">
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Led a team of 4 in developing innovative Android applications.</span></li>
+                                <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500/50 mt-1"></i><span>Fostered collaboration to ensure successful delivery of project milestones.</span></li>
                             </ul>
                         </div>
                     </div>
@@ -326,20 +392,56 @@
         </div>
     </section>
 
-    <!-- Certifications -->
+    <!-- Certifications Section -->
     <section id="certifications" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16">
                 <h2 class="text-3xl font-bold mb-4">Certifications</h2>
+                <p class="text-slate-500">Continuous learning across AI, product building, and design.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- AI for PMs -->
                 <a href="https://www.airtribe.live/workshop/certificate/7VN39BP39L2S" target="_blank" class="certification-card p-6 rounded-3xl group">
-                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
-                        <i class="fas fa-robot text-sm"></i>
+                    <div>
+                        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                            <i class="fas fa-robot text-sm"></i>
+                        </div>
+                        <h4 class="text-sm font-bold mb-2">AI for Product Managers</h4>
                     </div>
-                    <h4 class="text-sm font-bold mb-2">AI for Product Managers</h4>
-                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Airtribe</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
+                </a>
+
+                <!-- Claude for Builders -->
+                <a href="https://www.airtribe.live/workshop/certificate/2Q9OK6L2NZCN" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div>
+                        <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition">
+                            <i class="fas fa-brain text-sm"></i>
+                        </div>
+                        <h4 class="text-sm font-bold mb-2">Claude for Project Builders</h4>
+                    </div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
+                </a>
+
+                <!-- Autonomous Agents -->
+                <a href="https://www.airtribe.live/workshop/certificate/TRNQP6NRBNEV" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div>
+                        <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i class="fas fa-network-wired text-sm"></i>
+                        </div>
+                        <h4 class="text-sm font-bold mb-2">Building Autonomous Agents using n8n</h4>
+                    </div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
+                </a>
+
+                <!-- Rapid Prototyping -->
+                <a href="https://www.airtribe.live/workshop/certificate/PISJBWDHNGSD" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div>
+                        <div class="w-10 h-10 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-600 group-hover:text-white transition">
+                            <i class="fab fa-figma text-sm"></i>
+                        </div>
+                        <h4 class="text-sm font-bold mb-2">Rapid Prototyping Using Figma Make</h4>
+                    </div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
                 </a>
             </div>
         </div>
@@ -351,17 +453,28 @@
             <h2 class="text-3xl font-bold mb-16">Expertise Stack</h2>
             <div class="grid md:grid-cols-3 gap-12 text-left">
                 <div>
-                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Product</h5>
+                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Product & AI</h5>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Product Strategy</span>
                         <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">PRDs</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Vibe Coding</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Claude</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Antigravity</span>
                     </div>
                 </div>
                 <div>
-                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Analytics</h5>
+                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Analytics & Tools</h5>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">SQL</span>
                         <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Data Visualisation</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Excel</span>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Design</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Wireframes</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Figma Make</span>
                     </div>
                 </div>
             </div>
@@ -373,7 +486,6 @@
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-5xl font-extrabold mb-8 tracking-tight">Open for collaboration.</h2>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-                <!-- Updated Email Link -->
                 <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-10 py-5 rounded-3xl font-bold hover:bg-slate-800 transition shadow-xl shadow-slate-200">
                     Email Me
                 </a>
