@@ -3,187 +3,695 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Product Manager Portfolio</title>
+    <title>Ekansh Vashistha | Product & Analytics Strategy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        :root { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .experience-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .experience-card:hover {
+            transform: translateX(8px);
+        }
+
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-pill {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .skill-pill:hover {
+            background: #0f172a;
+            color: white;
+            border-color: #0f172a;
+        }
+
+        .certification-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .certification-card:hover {
+            border-color: #3b82f6;
+            background: #f8fbff;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-white text-slate-900">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tight text-blue-600 uppercase">PM_PORTFOLIO</span>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-                <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact</a>
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-black">EV</div>
+                    <span class="text-xl font-bold tracking-tight hidden sm:block">Ekansh Vashistha</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+                    <a href="#about" class="hover:text-slate-900 transition">About</a>
+                    <a href="#projects" class="hover:text-slate-900 transition">Projects</a>
+                    <a href="#experience" class="hover:text-slate-900 transition">Career Path</a>
+                    <a href="#certifications" class="hover:text-slate-900 transition">Certifications</a>
+                    <a href="#skills" class="hover:text-slate-900 transition">Skills</a>
+                </div>
+
+                <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">
+                    Get in Touch
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-gradient text-white pt-32 pb-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Solving User Problems, <br> <span class="text-blue-400">One Sprint at a Time.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Digital Product Manager specialized in scaling SaaS products, optimizing conversion funnels, and bridging the gap between engineering and business goals.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full border border-white/20">
-                    <i class="fas fa-chart-line text-blue-400"></i>
-                    <span class="text-sm">Data Driven</span>
+    <section id="about" class="pt-40 pb-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="max-w-4xl relative z-10">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-200 text-slate-600 text-[10px] font-bold uppercase tracking-widest mb-8">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                    <span>Product Manager | Business Analytics & Strategy</span>
                 </div>
-                <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full border border-white/20">
-                    <i class="fas fa-users text-blue-400"></i>
-                    <span class="text-sm">User Centric</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight mb-8">
+                    Turning Data & <br><span class="text-slate-400 italic">User Insights</span> into <br><span class="text-blue-600">Scalable Products.</span>
+                </h1>
+                <p class="text-xl text-slate-500 leading-relaxed mb-10 max-w-2xl">
+                    With experience in analytics and cross-functional collaboration, I focus on identifying user problems, defining product strategies, and delivering data-driven solutions. My portfolio showcases work across engagement optimization, user journey improvements, and product prototyping.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">
+                        View Projects
+                    </a>
+                    <a href="https://www.linkedin.com/in/ekanshvashistha/" target="_blank" class="px-8 py-4 border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition">
+                        Connect on LinkedIn
+                    </a>
                 </div>
-                <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full border border-white/20">
-                    <i class="fas fa-code-branch text-blue-400"></i>
-                    <span class="text-sm">Agile Leader</span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Stats/Impact Section -->
-    <section class="max-w-6xl mx-auto px-6 -mt-10 mb-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center">
-                <div class="text-3xl font-bold text-blue-600 mb-1">45%</div>
-                <div class="text-sm text-gray-500 uppercase tracking-widest">Revenue Growth</div>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center">
-                <div class="text-3xl font-bold text-blue-600 mb-1">1.2M</div>
-                <div class="text-sm text-gray-500 uppercase tracking-widest">Active Users Scaled</div>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center">
-                <div class="text-3xl font-bold text-blue-600 mb-1">20+</div>
-                <div class="text-sm text-gray-500 uppercase tracking-widest">Successful Shipments</div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-12 flex items-center">
-            <span class="w-8 h-1 bg-blue-600 mr-4"></span>
-            Case Studies
-        </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- Project 1 -->
-            <div class="group card-hover bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                <div class="h-56 bg-blue-100 relative">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <i class="fas fa-mobile-alt text-6xl text-blue-300"></i>
-                    </div>
-                </div>
-                <div class="p-8">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Fintech • B2C</span>
-                    <h3 class="text-24 font-bold mt-2 mb-4">Mobile Wallet Redesign</h3>
-                    <p class="text-gray-600 mb-6">Reduced user onboarding friction by 30% through A/B testing and iterative UX research.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">SQL</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">Figma</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">Amplitude</span>
-                    </div>
-                </div>
+    <section id="projects" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Projects</h2>
+                <p class="text-slate-500">Strategic problem solving across growth, trust, and AI automation.</p>
             </div>
 
-            <!-- Project 2 -->
-            <div class="group card-hover bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                <div class="h-56 bg-indigo-100 relative">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <i class="fas fa-robot text-6xl text-indigo-300"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 1. Project: Twitter -->
+                <div class="project-card bg-white rounded-3xl border border-sky-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('twitter-growth')">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-50 text-sky-500 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Twitter: AARRR & Activation</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Optimizing Activation and Retention through Smart Onboarding, Feed Quality, and Creator loops.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-sky-50 text-sky-700 rounded-full">Growth Strategy</span>
+                        <i class="fas fa-arrow-right text-slate-300 group-hover:text-sky-500 group-hover:translate-x-1 transition"></i>
                     </div>
                 </div>
-                <div class="p-8">
-                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest">AI • SaaS</span>
-                    <h3 class="text-24 font-bold mt-2 mb-4">AI Customer Support Bot</h3>
-                    <p class="text-gray-600 mb-6">Integrated LLM capabilities to automate 60% of tier-1 support tickets, saving $200k/year.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">Python</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">Agile</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">Jira</span>
+
+                <!-- 2. Project: Meal Planner -->
+                <div class="project-card bg-white rounded-3xl border border-orange-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('meal-planner')">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Adaptive Meal Planner</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Hyper-personalized 'Kitchen OS' integrating pantry awareness and grocery automation.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-orange-50 text-orange-700 rounded-full">Adaptive Design</span>
+                        <i class="fas fa-arrow-right text-slate-300 group-hover:text-orange-500 group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- 3. Project: Practo -->
+                <div class="project-card bg-white rounded-3xl border border-blue-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('practo-improvement')">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Practo: Trust Framework</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Enhancing appointment reliability through AI-verified slots and recovery hubs.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Trust Engine</span>
+                        <i class="fas fa-arrow-right text-slate-300 group-hover:text-blue-500 group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- 4. Project: Edtech Learning System -->
+                <div class="project-card bg-white rounded-3xl border border-emerald-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('learning-system')">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Edtech APP: Personalized Learning</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Designing an AI-driven ecosystem that balances learner goals with instructor reach.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">AI/ML Project</span>
+                        <i class="fas fa-arrow-right text-slate-300 group-hover:text-emerald-500 group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- 5. Project: Fitness App (VitaFit) -->
+                <div class="project-card bg-white rounded-3xl border border-purple-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('fitness-app')">
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Fitness App (VitaFit)</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Sustaining engagement through personalization, community challenges, and social accountability.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Gamification</span>
+                        <i class="fas fa-arrow-right text-slate-300 group-hover:text-purple-500 group-hover:translate-x-1 transition"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="bg-gray-100 py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Work History</h2>
-            <div class="space-y-12">
-                <div class="flex flex-col md:flex-row gap-4 md:gap-12">
-                    <div class="md:w-1/4">
-                        <span class="text-lg font-bold text-gray-400">2021 — Present</span>
+    <!-- Career Path Section -->
+    <section id="experience" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div>
+                    <h4 class="text-blue-400 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Professional Path</h4>
+                    <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight">The Career Journey</h2>
+                </div>
+                <div class="text-right">
+                    <!-- Line removed as per request -->
+                </div>
+            </div>
+
+            <div class="space-y-24 relative">
+                <div class="hidden md:block absolute left-[45px] top-4 bottom-4 w-px bg-slate-800"></div>
+
+                <!-- HCLTech -->
+                <div class="relative pl-0 md:pl-28 experience-card group">
+                    <div class="hidden md:flex absolute left-0 top-0 w-24 h-24 bg-slate-800 rounded-3xl items-center justify-center z-10 border border-slate-700 group-hover:border-blue-500 transition-colors">
+                        <span class="text-2xl font-black text-blue-500">HCL</span>
                     </div>
-                    <div class="md:w-3/4">
-                        <h4 class="text-xl font-bold">Senior Product Manager</h4>
-                        <p class="text-blue-600 mb-2">TechFlow Solutions</p>
-                        <p class="text-gray-600">Leading a squad of 12 engineers and designers to build the core marketplace infrastructure. Managed product roadmap for 3 key expansion regions.</p>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-3">Current Role</span>
+                                <h3 class="text-3xl font-bold">HCLTech</h3>
+                                <p class="text-slate-400 font-medium">Assistant Manager — PMO (Strategic Initiative)</p>
+                            </div>
+                            <div class="flex flex-col md:items-end">
+                                <span class="text-xs font-bold bg-slate-800 px-4 py-2 rounded-xl text-slate-300">Jan 2023 — Present</span>
+                                <span class="text-[10px] text-slate-500 mt-2 uppercase tracking-widest">Noida, India</span>
+                            </div>
+                        </div>
+
+                        <!-- Main Responsibilities -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <ul class="space-y-4 text-sm text-slate-400">
+                                    <li class="flex gap-3">
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                        <span>Led analytics initiatives focused on Profit and Loss (P&L) analysis and financial performance monitoring to support executive decision-making.</span>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                        <span>Developed business intelligence dashboards for spend analytics, demand fulfillment, and P&L reporting, improving visibility across business units.</span>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                        <span>Collaborated with finance and operations teams to compile revenue and cost data for budgeting and financial planning.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <ul class="space-y-4 text-sm text-slate-400">
+                                    <li class="flex gap-3">
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                        <span>Streamlined reporting workflows and cross-team data processes, reducing reporting turnaround time by 67%.</span>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                        <span>Conducted data analysis to identify growth opportunities and potential new accounts aligned with the company's strategy.</span>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                        <span>Coordinated with multiple stakeholders to ensure data accuracy, reporting consistency, and operational transparency.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Analytics Initiatives Section -->
+                        <div class="bg-white/5 border border-white/10 rounded-[2.5rem] p-8 mt-4">
+                            <h4 class="text-emerald-400 font-black uppercase tracking-[0.2em] text-[10px] mb-6">Analytics Initiatives</h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+                                    <p class="text-xs font-bold text-white mb-1">Daily Action Tracker</p>
+                                    <p class="text-[10px] text-slate-500">Operations Monitoring</p>
+                                </div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+                                    <p class="text-xs font-bold text-white mb-1">Spend Analytics</p>
+                                    <p class="text-[10px] text-slate-500">Financial Insights</p>
+                                </div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+                                    <p class="text-xs font-bold text-white mb-1">Onboarding Analytics</p>
+                                    <p class="text-[10px] text-slate-500">Process Efficiency</p>
+                                </div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+                                    <p class="text-xs font-bold text-white mb-1">P&L Reporting</p>
+                                    <p class="text-[10px] text-slate-500">Unit-wise Visibility</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Impact Summary -->
+                        <div class="p-6 rounded-2xl bg-blue-500/10 border border-blue-500/20">
+                            <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest block mb-2">Key Impact at HCLTech</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Improved decision-making visibility through analytics dashboards, reduced reporting time significantly by improving data processes, and enabled strategic planning through reliable financial insights.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-t border-gray-200 pt-12">
-                    <div class="md:w-1/4">
-                        <span class="text-lg font-bold text-gray-400">2018 — 2021</span>
+
+                <div class="relative py-12">
+                    <div class="h-px bg-slate-800 w-full"></div>
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 px-8 py-2 border border-slate-700 rounded-full text-[10px] font-black text-slate-500 uppercase tracking-[0.4em]">Foundation Years</span>
+                </div>
+
+                <!-- Internship Section -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Eggoz Nutrition -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-orange-400 group-hover:bg-orange-400 group-hover:text-white transition">EN</div>
+                                <span class="text-[10px] font-bold text-slate-500">May 2022 — Aug 2022</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">Eggoz Nutrition</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Business Analytics Intern</p>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Deployed 4 BI dashboards on Maple Monk Cloud, centralizing operational data for real-time tracking.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Delivered actionable insights for 6 new dashboards using SQL and Excel to improve data visibility and reporting.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Identified key bottlenecks in the fulfillment cycle, contributing to a 12% improvement in logistics turnaround.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Automated weekly performance reports, saving approximately 10 hours of manual data entry per week.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="md:w-3/4">
-                        <h4 class="text-xl font-bold">Product Associate</h4>
-                        <p class="text-blue-600 mb-2">GrowthHub Inc.</p>
-                        <p class="text-gray-600">Owned the retention workstream. Increased 30-day retention by 15% by implementing a personalized email automation engine.</p>
+
+                    <!-- Country Holidays Inn -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-blue-400 group-hover:bg-blue-400 group-hover:text-white transition">CH</div>
+                                <span class="text-[10px] font-bold text-slate-500">Feb 2022 — Mar 2022</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">Country Holidays Inn Suites</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Social Media Marketing Intern</p>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Analyzed website performance metrics to devise strategies aimed at reducing bounce rates and enhancing retention.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Implemented engagement strategies across social platforms, resulting in increased brand visibility and interaction.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- EduRev -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-emerald-400 group-hover:bg-emerald-400 group-hover:text-white transition">ER</div>
+                                <span class="text-[10px] font-bold text-slate-500">Jan 2021 — Jul 2021</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">EduRev Learning Pvt. Ltd</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Content Analyst Intern</p>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Increased content engagement by executing data-driven initiatives aligned with user preferences.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Conducted Excel-based analytics on user behavior, leading to actionable recommendations to boost subscription rates.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CSIR -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-purple-400 group-hover:bg-purple-400 group-hover:text-white transition">CS</div>
+                                <span class="text-[10px] font-bold text-slate-500">May 2019 — Jun 2019</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">CSIR-CSIO</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Internship Trainee</p>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Contributed to a crop-weed discrimination project utilizing image processing for agricultural innovation.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Implemented advanced segmentation methods (Color-based & KNN classifiers) to enhance classification accuracy.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The D-Zone -->
+                    <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-red-400 group-hover:bg-red-400 group-hover:text-white transition">DZ</div>
+                                <span class="text-[10px] font-bold text-slate-500">Mar 2019 — Jun 2019</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-1">The D-Zone</h4>
+                            <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-4">Software Engineer Intern</p>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3">
+                                    <i class="fas fa-check-circle text-blue-500/50 mt-1"></i>
+                                    <span>Led a team of 4 in developing innovative Android applications, ensuring successful delivery of project milestones.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 class="text-4xl font-bold mb-6">Let's build something great.</h2>
-        <p class="text-gray-600 mb-10">I’m currently open to new opportunities and collaboration on side projects.</p>
-        <div class="flex justify-center space-x-6">
-            <a href="#" class="w-14 h-14 bg-white shadow-md rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                <i class="fab fa-linkedin-in text-xl"></i>
-            </a>
-            <a href="#" class="w-14 h-14 bg-white shadow-md rounded-full flex items-center justify-center hover:bg-gray-900 hover:text-white transition">
-                <i class="fab fa-github text-xl"></i>
-            </a>
-            <a href="#" class="w-14 h-14 bg-white shadow-md rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white transition">
-                <i class="fab fa-twitter text-xl"></i>
-            </a>
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Certifications</h2>
+                <p class="text-slate-500">Upskilling in AI, Automation, and Product Prototyping.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- AI for PMs -->
+                <a href="https://www.airtribe.live/workshop/certificate/7VN39BP39L2S" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-robot text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-2">AI for Product Managers</h4>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Airtribe</p>
+                    <div class="mt-4 flex items-center text-[10px] text-blue-500 font-bold opacity-0 group-hover:opacity-100 transition">
+                        Verify <i class="fas fa-external-link-alt ml-2"></i>
+                    </div>
+                </a>
+
+                <!-- Claude for Builders -->
+                <a href="https://www.airtribe.live/workshop/certificate/2Q9OK6L2NZCN" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition">
+                        <i class="fas fa-brain text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-2">Claude for Project Builders</h4>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Airtribe</p>
+                    <div class="mt-4 flex items-center text-[10px] text-blue-500 font-bold opacity-0 group-hover:opacity-100 transition">
+                        Verify <i class="fas fa-external-link-alt ml-2"></i>
+                    </div>
+                </a>
+
+                <!-- n8n Agents -->
+                <a href="https://www.airtribe.live/workshop/certificate/TRNQP6NRBNEV" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fas fa-network-wired text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-2">Autonomous Agents with n8n</h4>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Airtribe</p>
+                    <div class="mt-4 flex items-center text-[10px] text-blue-500 font-bold opacity-0 group-hover:opacity-100 transition">
+                        Verify <i class="fas fa-external-link-alt ml-2"></i>
+                    </div>
+                </a>
+
+                <!-- Figma Prototyping -->
+                <a href="https://www.airtribe.live/workshop/certificate/PISJBWDHNGSD" target="_blank" class="certification-card p-6 rounded-3xl group">
+                    <div class="w-10 h-10 bg-pink-50 text-pink-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-pink-600 group-hover:text-white transition">
+                        <i class="fab fa-figma text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-2">Rapid Prototyping with Figma</h4>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Airtribe</p>
+                    <div class="mt-4 flex items-center text-[10px] text-blue-500 font-bold opacity-0 group-hover:opacity-100 transition">
+                        Verify <i class="fas fa-external-link-alt ml-2"></i>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="mt-12">
-            <a href="mailto:hello@pmportfolio.com" class="text-2xl font-semibold text-blue-600 underline">hello@yourname.com</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-16">Expertise Stack</h2>
+            <div class="grid md:grid-cols-3 gap-12 text-left">
+                <div>
+                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Product</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Product Strategy</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">PRDs</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">User Journey</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Product Discovery</span>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">Analytics</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">SQL</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Data Visualisation</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Excel</span>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-6">AI & Innovation</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Claude</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Antigravity</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Vibe Coding</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Figma Make</span>
+                        <span class="skill-pill px-4 py-2 rounded-xl text-xs font-bold">Automation</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-10 border-t border-gray-200 text-center text-sm text-gray-500">
-        <p>&copy; 2024 PM_PORTFOLIO. Built with focus on impact.</p>
+    <footer id="contact" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-extrabold mb-8 tracking-tight">Open for collaboration.</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+                <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-10 py-5 rounded-3xl font-bold hover:bg-slate-800 transition shadow-xl shadow-slate-200">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/ekanshvashistha/" target="_blank" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-3xl font-bold hover:bg-slate-50 transition">
+                    LinkedIn
+                </a>
+            </div>
+            <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">Built for Product Success • © 2024 Ekansh Vashistha</p>
+        </div>
     </footer>
 
+    <!-- CASE STUDY MODAL -->
+    <div id="caseStudyModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 md:p-8">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onclick="closeCaseStudy()"></div>
+        <div id="modalContent" class="relative bg-white w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-[3rem] shadow-2xl translate-y-8 opacity-0 no-scrollbar">
+            <button onclick="closeCaseStudy()" class="fixed top-8 right-12 w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-slate-50 transition z-20">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modalData" class="p-12 md:p-20"></div>
+        </div>
+    </div>
+
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        const caseStudies = {
+            'twitter-growth': {
+                title: "Twitter / X: AARRR Strategy",
+                overview: "A comprehensive product strategy deep dive mapping the complete user lifecycle on X. Focused on fixing Activation (30-follow threshold) and Retention (silent churn due to toxicity).",
+                problem: "Despite organic acquisition, new users suffer from 'Empty Feed Syndrome' and engagement has declined 48% YoY due to algorithmic irrelevance.",
+                jtbd: ["Instant 'Aha!' via personalized feeds", "Toxic-free engagement controls", "Frictionless creator entry loops"],
+                solution: "Proposed 3 High-Impact Epics: (1) Smart Onboarding Engine to reach the 30-follow threshold, (2) Feed Quality Dashboard for granular control and safety, (3) Lurker-to-Creator ramp using contextual starters and milestone rewards.",
+                strategicInsight: "Activation and Retention are the most critical product surfaces where engineering the path to the first relevant tweet yields the highest ROI.",
+                metrics: ["D7 Retention (Target: 42%)", "30+ Follow Rate (Target: 45%)", "Median Posts/Week"],
+                links: [
+                    { label: "Presentation Deck", url: "https://drive.google.com/file/d/1AFv0pvj8qUdH05UItJUDicrmrfD5WIm9/view?usp=drive_link", icon: "fas fa-presentation" },
+                    { label: "Detailed Analysis (PDF)", url: "https://drive.google.com/file/d/1fKVlkbT35T5F5iAaVAj35cxxe2Ti4wal/view?usp=sharing", icon: "fas fa-file-pdf" }
+                ]
+            },
+            'meal-planner': {
+                title: "Adaptive Daily Meal Planner",
+                overview: "Transforming kitchen management from a recipe app into an 'Adaptive Kitchen Decision System'.",
+                problem: "Users experience unnecessary stress, food waste, and grocery inefficiency because discovery and pantry tracking are disconnected.",
+                jtbd: [
+                    "Plan daily meals quickly to avoid repetitive searching.",
+                    "Use ingredients before they expire via pantry visibility.",
+                    "Auto-manage groceries to reduce manual effort."
+                ],
+                solution: "<b>The Adaptive Loop:</b><br>• <b>Fridge-to-Recipe Intel:</b> 'Cook What You Have' feature.<br>• <b>Visual Pantry:</b> Grouped view for expiry prioritization.<br>• <b>Closed-Loop Grocery:</b> Auto-generated lists linked to meal plans.",
+                strategicInsight: "The real problem isn't finding recipes—it's managing decisions. Success lies in ingredient lifecycle tracking.",
+                metrics: ["Decision Velocity", "Inventory Accuracy", "Habit Strength"],
+                links: [
+                    { label: "Interactive Prototype", url: "https://patio-ounce-78097001.figma.site/", icon: "fab fa-figma" },
+                    { label: "Detailed Analysis (PDF)", url: "https://drive.google.com/file/d/1B7tovDb_bAEfjrkppnXM8ofCSDQ01RJt/view?usp=sharing", icon: "fas fa-file-pdf" },
+                    { label: "Presentation Deck", url: "https://drive.google.com/file/d/1ianmDpNeNX73LwcHlXgon5eIpb4HXJk6/view?usp=drive_link", icon: "fas fa-presentation" }
+                ]
+            },
+            'practo-improvement': {
+                title: "Practo: Trust Framework",
+                overview: "Enhancing the appointment booking experience by closing the gap between 'confirmed' and 'consulted'.",
+                problem: "User research revealed a significant gap: confirmed appointments are not always reliable due to last-minute cancellations. Result: Users lose trust and revert to offline booking.",
+                jtbd: [
+                    "When I need a doctor, I want a reliable appointment to avoid uncertainty.",
+                    "When I book online, I want clear confirmation to eliminate offline double-checking.",
+                    "When something goes wrong, I want instant resolution to still receive consultation."
+                ],
+                solution: "<b>High-Impact Epics:</b><br>• <b>Smart Verified Slots:</b> AI-powered highlighting of reliable doctors.<br>• <b>Backup Booking:</b> User-approved fallback options.<br>• <b>Instant Support Hub:</b> AI + Human recovery for rebooking/refunds.",
+                strategicInsight: "In healthcare, trust is the product — not just a feature. Recovery loops are as critical as primary booking flows.",
+                metrics: ["Verified Slots: RICE Priority 1", "Support Hub: High Impact at failure", "Backup Booking: Secondary"],
+                links: [{ label: "Interactive Prototype", url: "https://lnkd.in/gYJkgJ86", icon: "fab fa-figma" }]
+            },
+            'learning-system': {
+                title: "Edtech APP: Personalized Learning",
+                overview: "A comprehensive AI-driven recommendation ecosystem designed to solve choice paralysis for learners.",
+                problem: "Learners face choice paralysis and misaligned career paths, while instructors struggle with audience targeting.",
+                jtbd: [
+                    "<b>Learners:</b> Career goal alignment and skill-level matching.",
+                    "<b>Instructors:</b> Content tagging and live-class analytics.",
+                    "<b>Admins:</b> Handling 'Cold Start' via onboarding signals."
+                ],
+                solution: "<b>Core Features:</b><br>• <b>Skill-Assessment Onboarding:</b> Initial quiz to solve cold-start.<br>• <b>Adaptive Learning Paths:</b> Structured journeys evolving with performance.<br>• <b>Instructor Insight Hub:</b> Analytics on drop-offs and sentiment.",
+                strategicInsight: "I prioritized a <b>'Privacy-First Personalization'</b> approach—leveraging progressive data collection and explainable recommendations.",
+                metrics: ["CTR on Recommendations", "Course Completion Rate", "Decision Velocity"],
+                links: [
+                    { label: "Presentation Deck", url: "https://drive.google.com/file/d/1RV0V1Z7vPznAimEgLNBBVtzNMp5ja23-/view?usp=sharing", icon: "fas fa-presentation" },
+                    { label: "Detailed Report (PDF)", url: "https://drive.google.com/file/d/1nv-yBci-eKmexYJ7rVDC-oGWilOaioK3/view?usp=sharing", icon: "fas fa-file-pdf" }
+                ]
+            },
+            'fitness-app': {
+                title: "Fitness App (VitaFit)",
+                overview: "MoveTogether+ is a feature initiative designed to improve user motivation, repeat workouts, and instructor engagement through a motivation loop.",
+                problem: "Platform faces low user retention (nearly 80% drop off in 30 days) due to motivational drop-offs and a lack of impersonal connection/accountability triggers.",
+                jtbd: [
+                    "Working Professionals: Need motivation for flexible online workouts.",
+                    "Gen Z Enthusiasts: Competitive community-driven experiences.",
+                    "Accountability: Need external triggers to maintain workout habits."
+                ],
+                solution: "<b>MoveTogether+ Loop:</b><br>• <b>AI Instructor Match:</b> Behavioral recommendation system.<br>• <b>Community Challenges:</b> Leaderboards with grand rewards.<br>• <b>Gamification:</b> Streak tracking, badges, and scratch-card rewards.<br>• <b>Squads/Buddy:</b> Social accountability through partners and tribes.",
+                strategicInsight: "Sustaining engagement requires combining Personalization → Motivation → Rewards → Social Accountability into a singular behavioral loop.",
+                metrics: [
+                    "Sessions/Week: Target 2 → 3.5 sessions.",
+                    "30-day Retention: Target 20% improvement.",
+                    "Challenge Adoption: Target 40% participation."
+                ],
+                links: [
+                    { label: "PRD Document", url: "https://drive.google.com/file/d/1Uaa0KP1w87OyuuiahM4kQMkPTTCuNdfq/view?usp=sharing", icon: "fas fa-file-alt" },
+                    { label: "Wireframes (Figma)", url: "https://blend-draft-15080245.figma.site/", icon: "fab fa-figma" }
+                ]
+            }
+        };
+
+        function openCaseStudy(id) {
+            const data = caseStudies[id];
+            if (!data) return;
+            const modal = document.getElementById('caseStudyModal');
+            const container = document.getElementById('modalData');
+            
+            container.innerHTML = `
+                <div class="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
+                    <div>
+                        <h2 class="text-4xl font-extrabold mb-4">${data.title}</h2>
+                        <p class="text-blue-500 font-bold uppercase tracking-widest text-xs">Strategy & Product Excellence</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 md:items-end pr-12">
+                        ${data.links.map(l => `<a href="${l.url}" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-900 hover:bg-blue-50 transition flex items-center gap-2"><i class="${l.icon}"></i> ${l.label}</a>`).join('')}
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-slate-400">The Problem</h4>
+                        <p class="text-slate-600 mb-8 leading-relaxed">${data.problem}</p>
+                        <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-slate-400">Proposed Solutions</h4>
+                        <div class="text-slate-600 mb-8 leading-relaxed">${data.solution}</div>
+                        <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-slate-400">Strategic Insight</h4>
+                        <div class="p-6 bg-slate-900 text-white rounded-2xl mb-8 leading-relaxed">${data.strategicInsight}</div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-blue-50 p-8 rounded-3xl">
+                            <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-blue-600">User Goals (JTBD)</h4>
+                            <ul class="space-y-3">
+                                ${data.jtbd.map(j => `<li class="text-sm text-slate-600 flex gap-2"><i class="fas fa-check text-blue-500"></i> ${j}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="bg-slate-50 p-8 rounded-3xl">
+                            <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-slate-400">Metrics & Success Indicators</h4>
+                            <ul class="space-y-3">
+                                ${data.metrics.map(m => `<li class="text-sm text-slate-600 font-bold"><i class="fas fa-bullseye mr-2 text-slate-300"></i> ${m}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="p-6 border border-slate-100 rounded-3xl">
+                            <h4 class="font-bold text-xs mb-3 uppercase tracking-wider text-slate-400">Context</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">${data.overview}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => { 
+                document.getElementById('modalContent').classList.remove('translate-y-8', 'opacity-0'); 
+                document.getElementById('modalContent').classList.add('translate-y-0', 'opacity-100'); 
+            }, 10);
+        }
+
+        function closeCaseStudy() {
+            const modal = document.getElementById('caseStudyModal');
+            document.getElementById('modalContent').classList.add('translate-y-8', 'opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); document.body.style.overflow = 'auto'; }, 300);
+        }
     </script>
 </body>
 </html>
