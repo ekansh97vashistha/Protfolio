@@ -8,62 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
         :root { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; }
-        
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .experience-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .experience-card:hover {
-            transform: translateX(8px);
-        }
-
-        .project-card {
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-        }
-
-        .skill-pill {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
-        .skill-pill:hover {
-            background: #0f172a;
-            color: white;
-            border-color: #0f172a;
-        }
-
-        .certification-card {
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .certification-card:hover {
-            border-color: #3b82f6;
-            background: #f8fbff;
-            transform: translateY(-2px);
-        }
-
+        .glass-nav { background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .experience-card { transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+        .experience-card:hover { transform: translateX(8px); }
+        .project-card { transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1); }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1); }
+        .skill-pill { background: #f8fafc; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
+        .skill-pill:hover { background: #0f172a; color: white; border-color: #0f172a; }
+        .certification-card { transition: all 0.3s ease; border: 1px solid #e2e8f0; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+        .certification-card:hover { border-color: #3b82f6; background: #f8fbff; transform: translateY(-2px); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between h-20 items-center">
@@ -71,7 +31,6 @@
                     <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-black">EV</div>
                     <span class="text-xl font-bold tracking-tight hidden sm:block">Ekansh Vashistha</span>
                 </div>
-                
                 <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-500">
                     <a href="#about" class="hover:text-slate-900 transition">About</a>
                     <a href="#projects" class="hover:text-slate-900 transition">Projects</a>
@@ -79,15 +38,11 @@
                     <a href="#certifications" class="hover:text-slate-900 transition">Certifications</a>
                     <a href="#skills" class="hover:text-slate-900 transition">Skills</a>
                 </div>
-
-                <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">
-                    Get in Touch
-                </a>
+                <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Get in Touch</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="about" class="pt-40 pb-24 bg-slate-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative">
             <div class="max-w-4xl relative z-10">
@@ -98,128 +53,122 @@
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight mb-8">
                     Turning Data & <br><span class="text-slate-400 italic">User Insights</span> into <br><span class="text-blue-600">Scalable Products.</span>
                 </h1>
-                <p class="text-xl text-slate-500 leading-relaxed mb-10 max-w-2xl">
-                    With experience in analytics and cross-functional collaboration, I focus on identifying user problems, defining product strategies, and delivering data-driven solutions. My portfolio showcases work across engagement optimization, user journey improvements, and product prototyping.
-                </p>
+                <p class="text-xl text-slate-500 leading-relaxed mb-10 max-w-2xl">With experience in analytics and cross-functional collaboration, I focus on identifying user problems, defining product strategies, and delivering data-driven solutions. My portfolio showcases work across engagement optimization, user journey improvements, and product prototyping.</p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#projects" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">
-                        View Projects
-                    </a>
-                    <a href="https://www.linkedin.com/in/ekanshvashistha/" target="_blank" class="px-8 py-4 border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition">
-                        Connect on LinkedIn
-                    </a>
+                    <a href="#projects" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">View Projects</a>
+                    <a href="https://www.linkedin.com/in/ekanshvashistha/" target="_blank" class="px-8 py-4 border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition">Connect on LinkedIn</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16">
                 <h2 class="text-3xl font-bold mb-4">Projects</h2>
                 <p class="text-slate-500">Strategic problem solving across growth, trust, and AI automation.</p>
             </div>
-
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 1. Project: Twitter -->
+
+                <!-- Twitter -->
                 <div class="project-card bg-white rounded-3xl border border-sky-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('twitter-growth')">
                     <div>
                         <div class="w-12 h-12 bg-sky-50 text-sky-500 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
                             <i class="fab fa-twitter"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Twitter: AARRR & Activation</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Optimizing Activation and Retention through Smart Onboarding, Feed Quality, and Creator loops.</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center justify-between mt-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-sky-50 text-sky-700 rounded-full">Growth Strategy</span>
-                            <span class="text-xs font-bold text-slate-400 group-hover:text-sky-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
+                        <h3 class="text-xl font-bold mb-3">Twitter / X: AARRR Funnel Analysis</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">Full-funnel AARRR deep dive — mapping Acquisition to Referral, identifying the Activation gap causing churn, and proposing 3 product Epics with RICE prioritisation to fix onboarding, feed quality &amp; creator loops.</p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-sky-50 text-sky-600 rounded-full">Activation</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-sky-50 text-sky-600 rounded-full">Retention</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-sky-50 text-sky-600 rounded-full">RICE</span>
                         </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-sky-50 text-sky-700 rounded-full">Growth Strategy</span>
+                        <span class="text-xs font-bold text-slate-400 group-hover:text-sky-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- 2. Project: Meal Planner -->
+                <!-- Meal Planner -->
                 <div class="project-card bg-white rounded-3xl border border-orange-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('meal-planner')">
                     <div>
-                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors">
-                            <i class="fas fa-utensils"></i>
-                        </div>
+                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors"><i class="fas fa-utensils"></i></div>
                         <h3 class="text-xl font-bold mb-3">Adaptive Meal Planner</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Hyper-personalized 'Kitchen OS' integrating pantry awareness and grocery automation.</p>
-                        <a href="https://patio-ounce-78097001.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-xl text-xs font-bold hover:bg-orange-600 hover:text-white transition-all border border-orange-100">
-                           <i class="fab fa-figma"></i> Open Prototype
-                        </a>
-                    </div>
-                    <div class="mt-6">
-                        <div class="flex items-center justify-between">
-                            <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-orange-50 text-orange-700 rounded-full">Adaptive Design</span>
-                            <span class="text-xs font-bold text-slate-400 group-hover:text-orange-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">Research-led design of an Adaptive Kitchen Decision System — solving decision fatigue, food waste, and grocery inefficiency by connecting pantry awareness, recipe discovery, and grocery automation in one loop.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-orange-50 text-orange-600 rounded-full">5 Whys</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-orange-50 text-orange-600 rounded-full">JTBD</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-orange-50 text-orange-600 rounded-full">UX Design</span>
                         </div>
+                        <a href="https://patio-ounce-78097001.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-xl text-xs font-bold hover:bg-orange-600 hover:text-white transition-all border border-orange-100"><i class="fab fa-figma"></i> Open Prototype</a>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-orange-50 text-orange-700 rounded-full">Adaptive Design</span>
+                        <span class="text-xs font-bold text-slate-400 group-hover:text-orange-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- 3. Project: Practo -->
+                <!-- Practo -->
                 <div class="project-card bg-white rounded-3xl border border-blue-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('practo-improvement')">
                     <div>
-                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i class="fas fa-stethoscope"></i>
-                        </div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i class="fas fa-stethoscope"></i></div>
                         <h3 class="text-xl font-bold mb-3">Practo: Trust Framework</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Enhancing appointment reliability through AI-verified slots and recovery hubs.</p>
-                        <a href="https://lnkd.in/gYJkgJ86" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-xs font-bold hover:bg-blue-600 hover:text-white transition-all border border-blue-100">
-                           <i class="fab fa-figma"></i> Open Prototype
-                        </a>
-                    </div>
-                    <div class="mt-6">
-                        <div class="flex items-center justify-between">
-                            <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Trust Engine</span>
-                            <span class="text-xs font-bold text-slate-400 group-hover:text-blue-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">JTBD-driven redesign of Practo's appointment reliability — proposing AI-verified slots, user-controlled backup bookings, and an Instant Support Hub to rebuild trust at every stage of the booking journey.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-blue-50 text-blue-600 rounded-full">JTBD</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-blue-50 text-blue-600 rounded-full">RICE</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-blue-50 text-blue-600 rounded-full">Trust Design</span>
                         </div>
+                        <a href="https://fiber-spruce-63091034.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-xs font-bold hover:bg-blue-600 hover:text-white transition-all border border-blue-100"><i class="fab fa-figma"></i> Open Prototype</a>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Trust Engine</span>
+                        <span class="text-xs font-bold text-slate-400 group-hover:text-blue-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- 4. Project: Edtech Learning System -->
+                <!-- Edtech -->
                 <div class="project-card bg-white rounded-3xl border border-emerald-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('learning-system')">
                     <div>
-                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors"><i class="fas fa-graduation-cap"></i></div>
                         <h3 class="text-xl font-bold mb-3">Edtech APP: Personalized Learning</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Designing an AI-driven ecosystem that balances learner goals with instructor reach.</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center justify-between mt-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">AI/ML Project</span>
-                            <span class="text-xs font-bold text-slate-400 group-hover:text-emerald-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">AI-powered recommendation system designed for 3 personas — Learners, Instructors, and Admins — solving cold-start, choice paralysis, and content quality trade-offs through privacy-first personalization.</p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-emerald-50 text-emerald-600 rounded-full">User Stories</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-emerald-50 text-emerald-600 rounded-full">AI/ML</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-emerald-50 text-emerald-600 rounded-full">System Design</span>
                         </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">AI/ML Project</span>
+                        <span class="text-xs font-bold text-slate-400 group-hover:text-emerald-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- 5. Project: Fitness App (VitaFit) -->
+                <!-- VitaFit -->
                 <div class="project-card bg-white rounded-3xl border border-purple-100 p-8 cursor-pointer group shadow-sm flex flex-col justify-between" onclick="openCaseStudy('fitness-app')">
                     <div>
-                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors"><i class="fas fa-heartbeat"></i></div>
                         <h3 class="text-xl font-bold mb-3">Fitness App (VitaFit)</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Sustaining engagement through personalization, community challenges, and social accountability.</p>
-                         <a href="https://blend-draft-15080245.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-purple-50 text-purple-700 rounded-xl text-xs font-bold hover:bg-purple-600 hover:text-white transition-all border border-purple-100">
-                            <i class="fab fa-figma"></i> Open Prototype
-                         </a>
-                    </div>
-                    <div class="mt-6">
-                        <div class="flex items-center justify-between">
-                            <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Gamification</span>
-                            <span class="text-xs font-bold text-slate-400 group-hover:text-purple-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">PRD for MoveTogether+ — a 4-feature engagement system tackling the 80% 30-day drop-off problem through AI instructor matching, community challenges, gamification, and social accountability loops.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-purple-50 text-purple-600 rounded-full">PRD</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-purple-50 text-purple-600 rounded-full">RICE</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-purple-50 text-purple-600 rounded-full">Gamification</span>
                         </div>
+                        <a href="https://blend-draft-15080245.figma.site/" target="_blank" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 mt-2 px-4 py-2 bg-purple-50 text-purple-700 rounded-xl text-xs font-bold hover:bg-purple-600 hover:text-white transition-all border border-purple-100"><i class="fab fa-figma"></i> Open Wireframes</a>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Gamification</span>
+                        <span class="text-xs font-bold text-slate-400 group-hover:text-purple-500 transition">View Case Study <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Career Path Section -->
     <section id="experience" class="py-24 bg-slate-900 text-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
@@ -228,11 +177,8 @@
                     <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight">The Career Journey</h2>
                 </div>
             </div>
-
             <div class="space-y-24 relative">
                 <div class="hidden md:block absolute left-[45px] top-4 bottom-4 w-px bg-slate-800"></div>
-
-                <!-- HCLTech -->
                 <div class="relative pl-0 md:pl-28 experience-card group">
                     <div class="hidden md:flex absolute left-0 top-0 w-24 h-24 bg-slate-800 rounded-3xl items-center justify-center z-10 border border-slate-700 group-hover:border-blue-500 transition-colors">
                         <span class="text-2xl font-black text-blue-500">HCL</span>
@@ -249,66 +195,32 @@
                                 <span class="text-[10px] text-slate-500 mt-2 uppercase tracking-widest">Noida, India</span>
                             </div>
                         </div>
-
                         <div class="grid md:grid-cols-2 gap-6">
-                            <div class="space-y-4">
-                                <ul class="space-y-4 text-sm text-slate-400">
-                                    <li class="flex gap-3">
-                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                                        <span>Led analytics initiatives focused on Profit and Loss (P&L) analysis and financial performance monitoring to support executive decision-making.</span>
-                                    </li>
-                                    <li class="flex gap-3">
-                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                                        <span>Developed business intelligence dashboards for spend analytics, demand fulfillment, and P&L reporting, improving visibility across business units.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space-y-4">
-                                <ul class="space-y-4 text-sm text-slate-400">
-                                    <li class="flex gap-3">
-                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                                        <span>Streamlined reporting workflows and cross-team data processes, reducing reporting turnaround time by 67%.</span>
-                                    </li>
-                                    <li class="flex gap-3">
-                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                                        <span>Conducted data analysis to identify growth opportunities and potential new accounts aligned with the company's strategy.</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3"><i class="fas fa-check-circle text-blue-500 mt-1"></i><span>Led analytics initiatives focused on P&L analysis and financial performance monitoring to support executive decision-making.</span></li>
+                                <li class="flex gap-3"><i class="fas fa-check-circle text-blue-500 mt-1"></i><span>Developed BI dashboards for spend analytics, demand fulfillment, and P&L reporting, improving visibility across business units.</span></li>
+                            </ul>
+                            <ul class="space-y-4 text-sm text-slate-400">
+                                <li class="flex gap-3"><i class="fas fa-check-circle text-blue-500 mt-1"></i><span>Streamlined reporting workflows and cross-team data processes, reducing reporting turnaround time by 67%.</span></li>
+                                <li class="flex gap-3"><i class="fas fa-check-circle text-blue-500 mt-1"></i><span>Conducted data analysis to identify growth opportunities and potential new accounts aligned with company strategy.</span></li>
+                            </ul>
                         </div>
-
                         <div class="bg-white/5 border border-white/10 rounded-[2.5rem] p-8 mt-4">
                             <h4 class="text-emerald-400 font-black uppercase tracking-[0.2em] text-[10px] mb-6">Analytics Initiatives</h4>
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                                    <p class="text-xs font-bold text-white mb-1">Daily Action Tracker</p>
-                                    <p class="text-[10px] text-slate-500">Operations Monitoring</p>
-                                </div>
-                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                                    <p class="text-xs font-bold text-white mb-1">Spend Analytics</p>
-                                    <p class="text-[10px] text-slate-500">Financial Insights</p>
-                                </div>
-                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                                    <p class="text-xs font-bold text-white mb-1">Onboarding Analytics</p>
-                                    <p class="text-[10px] text-slate-500">Process Efficiency</p>
-                                </div>
-                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                                    <p class="text-xs font-bold text-white mb-1">P&L Reporting</p>
-                                    <p class="text-[10px] text-slate-500">Unit-wise Visibility</p>
-                                </div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50"><p class="text-xs font-bold text-white mb-1">Daily Action Tracker</p><p class="text-[10px] text-slate-500">Operations Monitoring</p></div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50"><p class="text-xs font-bold text-white mb-1">Spend Analytics</p><p class="text-[10px] text-slate-500">Financial Insights</p></div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50"><p class="text-xs font-bold text-white mb-1">Onboarding Analytics</p><p class="text-[10px] text-slate-500">Process Efficiency</p></div>
+                                <div class="p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50"><p class="text-xs font-bold text-white mb-1">P&L Reporting</p><p class="text-[10px] text-slate-500">Unit-wise Visibility</p></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="relative py-12">
                     <div class="h-px bg-slate-800 w-full"></div>
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 px-8 py-2 border border-slate-700 rounded-full text-[10px] font-black text-slate-500 uppercase tracking-[0.4em]">Internships & Training</span>
                 </div>
-
-                <!-- Expanded Internships Grid -->
                 <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Eggoz Nutrition -->
                     <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
                         <div>
                             <div class="flex justify-between items-start mb-6">
@@ -323,8 +235,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Country Holidays -->
                     <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
                         <div>
                             <div class="flex justify-between items-start mb-6">
@@ -339,8 +249,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- EduRev -->
                     <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
                         <div>
                             <div class="flex justify-between items-start mb-6">
@@ -355,8 +263,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- CSIR-CSIO -->
                     <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
                         <div>
                             <div class="flex justify-between items-start mb-6">
@@ -371,8 +277,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- The D-Zone -->
                     <div class="p-8 rounded-[2.5rem] bg-slate-800/50 border border-slate-800 hover:border-blue-500/30 transition flex flex-col justify-between group">
                         <div>
                             <div class="flex justify-between items-start mb-6">
@@ -392,7 +296,6 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16">
@@ -400,54 +303,26 @@
                 <p class="text-slate-500">Continuous learning across AI, product building, and design.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- AI for PMs -->
                 <a href="https://www.airtribe.live/workshop/certificate/7VN39BP39L2S" target="_blank" class="certification-card p-6 rounded-3xl group">
-                    <div>
-                        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
-                            <i class="fas fa-robot text-sm"></i>
-                        </div>
-                        <h4 class="text-sm font-bold mb-2">AI for Product Managers</h4>
-                    </div>
+                    <div><div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition"><i class="fas fa-robot text-sm"></i></div><h4 class="text-sm font-bold mb-2">AI for Product Managers</h4></div>
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
                 </a>
-
-                <!-- Claude for Builders -->
                 <a href="https://www.airtribe.live/workshop/certificate/2Q9OK6L2NZCN" target="_blank" class="certification-card p-6 rounded-3xl group">
-                    <div>
-                        <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition">
-                            <i class="fas fa-brain text-sm"></i>
-                        </div>
-                        <h4 class="text-sm font-bold mb-2">Claude for Project Builders</h4>
-                    </div>
+                    <div><div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition"><i class="fas fa-brain text-sm"></i></div><h4 class="text-sm font-bold mb-2">Claude for Project Builders</h4></div>
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
                 </a>
-
-                <!-- Autonomous Agents -->
                 <a href="https://www.airtribe.live/workshop/certificate/TRNQP6NRBNEV" target="_blank" class="certification-card p-6 rounded-3xl group">
-                    <div>
-                        <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
-                            <i class="fas fa-network-wired text-sm"></i>
-                        </div>
-                        <h4 class="text-sm font-bold mb-2">Building Autonomous Agents using n8n</h4>
-                    </div>
+                    <div><div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition"><i class="fas fa-network-wired text-sm"></i></div><h4 class="text-sm font-bold mb-2">Building Autonomous Agents using n8n</h4></div>
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
                 </a>
-
-                <!-- Rapid Prototyping -->
                 <a href="https://www.airtribe.live/workshop/certificate/PISJBWDHNGSD" target="_blank" class="certification-card p-6 rounded-3xl group">
-                    <div>
-                        <div class="w-10 h-10 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-600 group-hover:text-white transition">
-                            <i class="fab fa-figma text-sm"></i>
-                        </div>
-                        <h4 class="text-sm font-bold mb-2">Rapid Prototyping Using Figma Make</h4>
-                    </div>
+                    <div><div class="w-10 h-10 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-600 group-hover:text-white transition"><i class="fab fa-figma text-sm"></i></div><h4 class="text-sm font-bold mb-2">Rapid Prototyping Using Figma Make</h4></div>
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-4">Airtribe</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-16">Expertise Stack</h2>
@@ -481,128 +356,738 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contact" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-5xl font-extrabold mb-8 tracking-tight">Open for collaboration.</h2>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-                <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-10 py-5 rounded-3xl font-bold hover:bg-slate-800 transition shadow-xl shadow-slate-200">
-                    Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/ekanshvashistha/" target="_blank" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-3xl font-bold hover:bg-slate-50 transition">
-                    LinkedIn
-                </a>
+                <a href="mailto:123dkekansh@gmail.com" class="bg-slate-900 text-white px-10 py-5 rounded-3xl font-bold hover:bg-slate-800 transition shadow-xl shadow-slate-200">Email Me</a>
+                <a href="https://www.linkedin.com/in/ekanshvashistha/" target="_blank" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-3xl font-bold hover:bg-slate-50 transition">LinkedIn</a>
             </div>
             <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">Built for Product Success • © 2024 Ekansh Vashistha</p>
         </div>
     </footer>
 
-    <!-- CASE STUDY MODAL -->
     <div id="caseStudyModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 md:p-8">
         <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onclick="closeCaseStudy()"></div>
         <div id="modalContent" class="relative bg-white w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-[3rem] shadow-2xl translate-y-8 opacity-0 no-scrollbar">
-            <button onclick="closeCaseStudy()" class="fixed top-8 right-12 w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-slate-50 transition z-20">
-                <i class="fas fa-times"></i>
-            </button>
+            <button onclick="closeCaseStudy()" class="fixed top-8 right-12 w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-slate-50 transition z-20"><i class="fas fa-times"></i></button>
             <div id="modalData" class="p-12 md:p-20"></div>
         </div>
     </div>
 
     <script>
         const caseStudies = {
-            'twitter-growth': {
-                title: "Twitter / X: AARRR Strategy",
-                problem: "Despite organic acquisition, new users suffer from 'Empty Feed Syndrome'.",
-                jtbd: ["Instant 'Aha!' via personalized feeds"],
-                solution: "Proposed Smart Onboarding Engine to reach 30-follow threshold.",
-                strategicInsight: "Activation path is the highest ROI surface.",
-                metrics: ["D7 Retention"],
-                links: [
-                    { label: "Presentation Deck", url: "https://drive.google.com/file/d/1AFv0pvj8qUdH05UItJUDicrmrfD5WIm9/view?usp=drive_link", icon: "fas fa-presentation" }
-                ]
-            },
-            'meal-planner': {
-                title: "Adaptive Daily Meal Planner",
-                problem: "Users experience unnecessary stress and food waste.",
-                jtbd: ["Plan daily meals quickly"],
-                solution: "The Adaptive Kitchen Decision System with pantry tracking.",
-                strategicInsight: "Success lies in ingredient lifecycle tracking.",
-                metrics: ["Inventory Accuracy"],
-                links: [
-                    { label: "Interactive Prototype", url: "https://patio-ounce-78097001.figma.site/", icon: "fab fa-figma" }
-                ]
-            },
-            'practo-improvement': {
-                title: "Practo: Trust Framework",
-                problem: "Confirmed appointments are not always reliable.",
-                jtbd: ["Reliable medical consultations"],
-                solution: "Verified slots and instant recovery hubs.",
-                strategicInsight: "Trust is the product in healthcare.",
-                metrics: ["Booking Reliability"],
-                links: [{ label: "Interactive Prototype", url: "https://lnkd.in/gYJkgJ86", icon: "fab fa-figma" }]
-            },
-            'learning-system': {
-                title: "Edtech APP: Personalized Learning",
-                problem: "Learners face choice paralysis.",
-                jtbd: ["Career goal alignment"],
-                solution: "Skill-assessment onboarding and adaptive learning paths.",
-                strategicInsight: "Privacy-first personalization.",
-                metrics: ["Course Completion Rate"],
-                links: [
-                    { label: "Presentation Deck", url: "https://drive.google.com/file/d/1RV0V1Z7vPznAimEgLNBBVtzNMp5ja23-/view?usp=sharing", icon: "fas fa-presentation" }
-                ]
-            },
-            'fitness-app': {
-                title: "Fitness App (VitaFit)",
-                problem: "Nearly 80% drop off in 30 days.",
-                jtbd: ["Motivational social accountability"],
-                solution: "Community challenges and AI Instructor matches.",
-                strategicInsight: "Sustaining engagement requires social behavioral loops.",
-                metrics: ["30-day Retention"],
-                links: [
-                    { label: "Wireframes (Figma)", url: "https://blend-draft-15080245.figma.site/", icon: "fab fa-figma" }
-                ]
-            }
-        };
-
-        function openCaseStudy(id) {
-            const data = caseStudies[id];
-            if (!data) return;
-            const modal = document.getElementById('caseStudyModal');
-            const container = document.getElementById('modalData');
-            
-            container.innerHTML = `
-                <div class="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
+            'twitter-growth': () => `
+                <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-6">
                     <div>
-                        <h2 class="text-4xl font-extrabold mb-4">${data.title}</h2>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 text-sky-600 text-[10px] font-black uppercase tracking-widest mb-4">
+                            <i class="fab fa-twitter"></i> Twitter / X · AARRR Case Study
+                        </div>
+                        <h2 class="text-4xl font-extrabold mb-2 tracking-tight">Twitter / X: AARRR Funnel Analysis</h2>
+                        <p class="text-slate-500 text-sm max-w-xl">Full product strategy deep dive — mapping the complete user lifecycle, diagnosing highest-ROI gaps, and proposing three prioritised product Epics to fix activation, retention, and creator growth.</p>
                     </div>
-                    <div class="flex flex-wrap gap-2 md:items-end pr-12">
-                        ${data.links.map(l => `<a href="${l.url}" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-900 hover:bg-blue-50 transition flex items-center gap-2"><i class="${l.icon}"></i> ${l.label}</a>`).join('')}
+                    <div class="flex flex-wrap gap-2 shrink-0 pr-10">
+                        <a href="https://drive.google.com/file/d/1fKVlkbT35T5F5iAaVAj35cxxe2Ti4wal/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-sky-50 border border-sky-200 rounded-xl font-bold text-xs text-sky-700 hover:bg-sky-600 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-file-alt"></i> Detailed Report
+                        </a>
+                        <a href="https://drive.google.com/file/d/1AFv0pvj8qUdH05UItJUDicrmrfD5WIm9/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-700 hover:bg-slate-900 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-chalkboard"></i> Presentation Deck
+                        </a>
                     </div>
                 </div>
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div>
-                        <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-slate-400">The Problem</h4>
-                        <p class="text-slate-600 mb-8">${data.problem}</p>
-                        <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-slate-400">Solutions</h4>
-                        <div class="text-slate-600 mb-8">${data.solution}</div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">AARRR Funnel Snapshot</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                        <div class="p-4 bg-sky-50 rounded-2xl border border-sky-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-sky-500 mb-1">Acquisition</p>
+                            <p class="text-xs text-slate-600 font-medium">Organic-first via SEO, viral tweets &amp; earned media. ~74% of visitors leave before sign-up.</p>
+                        </div>
+                        <div class="p-4 bg-amber-50 rounded-2xl border border-amber-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-amber-500 mb-1">Activation ⚠️</p>
+                            <p class="text-xs text-slate-600 font-medium">Only ~20% of users hit the 30-follow threshold. Empty Feed Syndrome drives 24-hr churn.</p>
+                        </div>
+                        <div class="p-4 bg-red-50 rounded-2xl border border-red-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-red-500 mb-1">Retention ⚠️</p>
+                            <p class="text-xs text-slate-600 font-medium">Engagement down 48% YoY. Posting median fell from 5.04 to 2.16 posts/week since 2021.</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-emerald-500 mb-1">Revenue</p>
+                            <p class="text-xs text-slate-600 font-medium">Ad revenue 68% of total. X Premium at 3.6M subs — only 0.65% of MAU converted.</p>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-2xl border border-purple-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-purple-500 mb-1">Referral</p>
+                            <p class="text-xs text-slate-600 font-medium">Content IS the referral engine — viral threads, embeds &amp; cross-platform screenshots drive sign-ups.</p>
+                        </div>
                     </div>
-                    <div class="space-y-8">
-                        <div class="bg-blue-50 p-8 rounded-3xl">
-                            <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-blue-600">User Goals</h4>
-                            <ul class="space-y-3">
-                                ${data.jtbd.map(j => `<li class="text-sm text-slate-600"><i class="fas fa-check text-blue-500 mr-2"></i> ${j}</li>`).join('')}
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Top Gaps Identified</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Activation — Onboarding doesn't reach the magic moment</p>
+                                <p class="text-xs text-slate-500">Average follows at onboarding exit: 8–12 vs. the 30-follow internal threshold. Interest picker skews celebrity/brand with no location or niche personalisation.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-red-100 text-red-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Retention — Feed quality decay driving silent churn</p>
+                                <p class="text-xs text-slate-500">33% of reports are harassment; 30% hate speech. Algorithm optimises for controversy. Users have limited controls to tune their feed.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-purple-100 text-purple-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">3</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Retention + Referral — Lurker majority not converting to creators</p>
+                                <p class="text-xs text-slate-500">Posting fell 57% since 2021. Lurkers have no stake — no followers, no identity investment. Blank-page friction prevents first posts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Proposed Product Epics (RICE Prioritised)</h3>
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-2xl border border-sky-100 bg-sky-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-sky-500 text-white text-xs font-black flex items-center justify-center">1</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Smart Onboarding Engine</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-sky-100 text-sky-700 rounded-full">Activation</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">~4 person-months</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 mb-3">AI-assisted onboarding that builds a personalised 30+ follow list from 3 inputs: selected interests, location, and 1 known account. Each suggestion shows bio, follower count &amp; a sample post. First-post prompt tied to trending topics converts passive sign-ups into active participants from day one.</p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                                <div class="p-2 bg-white rounded-xl border border-sky-100 text-center"><p class="text-[10px] text-slate-400">30-follow rate</p><p class="text-xs font-bold text-slate-800">20% → 45%</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-sky-100 text-center"><p class="text-[10px] text-slate-400">D7 Retention</p><p class="text-xs font-bold text-slate-800">~30% → 42%</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-sky-100 text-center"><p class="text-[10px] text-slate-400">First post (48hr)</p><p class="text-xs font-bold text-slate-800">12% → 20%</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-sky-100 text-center"><p class="text-[10px] text-slate-400">90-day Retention</p><p class="text-xs font-bold text-slate-800">38.2% → 48%</p></div>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-red-100 bg-red-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-red-400 text-white text-xs font-black flex items-center justify-center">2</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Feed Quality &amp; Safety Controls</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-red-100 text-red-700 rounded-full">Retention</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">~10 person-months</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 mb-3">A Feed Quality dashboard with topic filters, tone selectors (informational / debate / entertainment), a 1-tap "reduce politics" mode, and per-post feedback. Plus a proactive harassment shield auto-collapsing abusive replies using the Grok sentiment model — before users see them.</p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                                <div class="p-2 bg-white rounded-xl border border-red-100 text-center"><p class="text-[10px] text-slate-400">Monthly Retention</p><p class="text-xs font-bold text-slate-800">72.6% → 75%</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-red-100 text-center"><p class="text-[10px] text-slate-400">Harassment reports</p><p class="text-xs font-bold text-slate-800">33% → 25% of total</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-red-100 text-center"><p class="text-[10px] text-slate-400">Daily session</p><p class="text-xs font-bold text-slate-800">16 → 18 min</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-red-100 text-center"><p class="text-[10px] text-slate-400">Feature adoption</p><p class="text-xs font-bold text-slate-800">25% of MAU</p></div>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-purple-400 text-white text-xs font-black flex items-center justify-center">3</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Lurker-to-Creator Growth Loop</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded-full">Retention + Referral</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">~6 person-months</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 mb-3">A creator entry ramp reducing blank-page friction: contextual reply starters, daily post prompts tied to personal interest graphs, draft auto-save, and milestone badges at 10 / 100 / 1K followers to build visible progress and platform identity investment.</p>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                <div class="p-2 bg-white rounded-xl border border-purple-100 text-center"><p class="text-[10px] text-slate-400">Median posts/week</p><p class="text-xs font-bold text-slate-800">2.16 → 3.5/wk</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-purple-100 text-center"><p class="text-[10px] text-slate-400">First post (14 days)</p><p class="text-xs font-bold text-slate-800">12% → 25%</p></div>
+                                <div class="p-2 bg-white rounded-xl border border-purple-100 text-center"><p class="text-[10px] text-slate-400">Reply rate</p><p class="text-xs font-bold text-slate-800">+15% vs baseline</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-slate-900 rounded-2xl text-white">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-sky-400 mb-2">Strategic Insight</p>
+                    <p class="text-sm leading-relaxed">Activation is Twitter's highest-ROI surface. The cheapest lever to grow MAU is not acquiring more users — it is converting existing sign-ups already at the top of the funnel. A user who starts posting becomes a referral engine, not just a consumer. Fixing the creator loop compounds platform value for all users over time.</p>
+                </div>
+            `,
+
+            'meal-planner': () => `
+                <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 text-orange-600 text-[10px] font-black uppercase tracking-widest mb-4">
+                            <i class="fas fa-utensils"></i> Adaptive Design · UX Research
+                        </div>
+                        <h2 class="text-4xl font-extrabold mb-2 tracking-tight">Adaptive Daily Meal Planner</h2>
+                        <p class="text-slate-500 text-sm max-w-xl">A research-led product design project — using JTBD and 5 Whys to diagnose three root problems in meal planning, then designing an Adaptive Kitchen Decision System to solve them end-to-end.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 shrink-0 pr-10">
+                        <a href="https://patio-ounce-78097001.figma.site/" target="_blank" class="px-4 py-2 bg-orange-50 border border-orange-200 rounded-xl font-bold text-xs text-orange-700 hover:bg-orange-600 hover:text-white transition flex items-center gap-2">
+                            <i class="fab fa-figma"></i> Prototype
+                        </a>
+                        <a href="https://drive.google.com/file/d/1B7tovDb_bAEfjrkppnXM8ofCSDQ01RJt/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-700 hover:bg-slate-900 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-file-alt"></i> Detailed Report
+                        </a>
+                        <a href="https://drive.google.com/file/d/1ianmDpNeNX73LwcHlXgon5eIpb4HXJk6/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-700 hover:bg-slate-900 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-chalkboard"></i> Presentation
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Core Problems Identified (5 Whys Analysis)</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-orange-100 text-orange-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Decision Fatigue in Daily Cooking</p>
+                                <p class="text-xs text-slate-500">Users feel stressed deciding what to cook because recipes, pantry contents, and grocery lists exist in disconnected systems — requiring repetitive manual effort every single day.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-red-100 text-red-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Food Waste &amp; Pantry Blindness</p>
+                                <p class="text-xs text-slate-500">30–40% of household groceries are wasted globally. Ingredients expire unused because apps focus on recipes, not ingredient lifecycle — users have no prioritised view of what needs to be used first.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">3</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Disconnected Meal Planning &amp; Grocery Management</p>
+                                <p class="text-xs text-slate-500">Users overspend or forget items because grocery lists are manual and not linked to meal plans. Rising grocery inflation makes this a growing pain point for budget-sensitive households.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Opportunity Areas</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="p-4 bg-orange-50 rounded-2xl border border-orange-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 mb-1">Opportunity 1</p>
+                            <p class="text-sm font-bold text-slate-800 mb-1">Fridge-to-Recipe Intelligence</p>
+                            <p class="text-xs text-slate-600">Convert available ingredients into instant meal suggestions — "Cook What You Have" as a core feature.</p>
+                        </div>
+                        <div class="p-4 bg-amber-50 rounded-2xl border border-amber-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-amber-500 mb-1">Opportunity 2</p>
+                            <p class="text-sm font-bold text-slate-800 mb-1">Personalized Decision Automation</p>
+                            <p class="text-xs text-slate-600">Reduce daily cognitive load through smart AI-driven meal suggestions aligned to dietary preferences and time constraints.</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-emerald-500 mb-1">Opportunity 3</p>
+                            <p class="text-sm font-bold text-slate-800 mb-1">Closed-Loop Grocery System</p>
+                            <p class="text-xs text-slate-600">Link meal plan → pantry → grocery list → expiry tracking in one automated workflow.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Key User Flows Designed</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Onboarding</p>
+                            <p class="text-[10px] text-slate-500">Capture preferences in 2 screens with toggles &amp; chips</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Daily Meal Planning</p>
+                            <p class="text-[10px] text-slate-500">Auto-suggested meals → user edits or accepts</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Recipe Discovery</p>
+                            <p class="text-[10px] text-slate-500">Filter by time / diet / pantry + embedded YouTube guidance</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Pantry Cooking</p>
+                            <p class="text-[10px] text-slate-500">Fresh | Near-Expiry | Spoiled grouping → recipe suggestions</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Weekly Planner</p>
+                            <p class="text-[10px] text-slate-500">AI auto-plans the week → generates grocery list</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Monthly Grocery</p>
+                            <p class="text-[10px] text-slate-500">Set recurring staples, adjust quantities &amp; budget</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Jobs To Be Done</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                        <div class="flex items-center gap-2 p-3 bg-orange-50 rounded-xl"><i class="fas fa-check text-orange-400 text-xs"></i><p class="text-xs text-slate-700 font-medium">Plan daily meals quickly</p></div>
+                        <div class="flex items-center gap-2 p-3 bg-orange-50 rounded-xl"><i class="fas fa-check text-orange-400 text-xs"></i><p class="text-xs text-slate-700 font-medium">Use ingredients before they expire</p></div>
+                        <div class="flex items-center gap-2 p-3 bg-orange-50 rounded-xl"><i class="fas fa-check text-orange-400 text-xs"></i><p class="text-xs text-slate-700 font-medium">Avoid repetitive recipe searching</p></div>
+                        <div class="flex items-center gap-2 p-3 bg-orange-50 rounded-xl"><i class="fas fa-check text-orange-400 text-xs"></i><p class="text-xs text-slate-700 font-medium">Auto-manage groceries weekly/monthly</p></div>
+                        <div class="flex items-center gap-2 p-3 bg-orange-50 rounded-xl"><i class="fas fa-check text-orange-400 text-xs"></i><p class="text-xs text-slate-700 font-medium">Get easy dinner suggestions</p></div>
+                        <div class="flex items-center gap-2 p-3 bg-orange-50 rounded-xl"><i class="fas fa-check text-orange-400 text-xs"></i><p class="text-xs text-slate-700 font-medium">Reduce stress around food decisions</p></div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Expected Outcomes</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center"><p class="text-xs font-bold text-slate-800">Reduced decision fatigue</p></div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center"><p class="text-xs font-bold text-slate-800">Less food waste</p></div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center"><p class="text-xs font-bold text-slate-800">Grocery efficiency</p></div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center"><p class="text-xs font-bold text-slate-800">Higher planning consistency</p></div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center"><p class="text-xs font-bold text-slate-800">Stronger habit formation</p></div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-slate-900 rounded-2xl text-white">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-orange-400 mb-2">Strategic Insight</p>
+                    <p class="text-sm leading-relaxed">The real problem wasn't finding recipes — it was managing decisions. By connecting pantry awareness, video discovery, and grocery automation into one adaptive loop, meal planning transforms from a daily stress trigger into a guided routine. The product's job is not to be a recipe app — it's to be an Adaptive Kitchen Decision System.</p>
+                </div>
+            `,
+
+            'practo-improvement': () => `
+                <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-black uppercase tracking-widest mb-4">
+                            <i class="fas fa-stethoscope"></i> Practo · Trust Framework
+                        </div>
+                        <h2 class="text-4xl font-extrabold mb-2 tracking-tight">Practo: Trust Framework</h2>
+                        <p class="text-slate-500 text-sm max-w-xl">A JTBD-driven product case study rebuilding appointment reliability on Practo — designing solutions for confidence before booking, control during booking, and recovery after failure.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 shrink-0 pr-10">
+                        <a href="https://fiber-spruce-63091034.figma.site/" target="_blank" class="px-4 py-2 bg-blue-50 border border-blue-200 rounded-xl font-bold text-xs text-blue-700 hover:bg-blue-600 hover:text-white transition flex items-center gap-2">
+                            <i class="fab fa-figma"></i> Prototype
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">The Problem</h3>
+                    <div class="p-6 bg-red-50 rounded-2xl border border-red-100 mb-4">
+                        <p class="text-sm text-slate-700 leading-relaxed">User research revealed a critical trust gap: a <strong>"confirmed"</strong> appointment on Practo is not always reliable. Issues include last-minute cancellations, clinics unaware of bookings, and availability mismatches — causing users to lose trust and revert to offline booking, defeating the product's core value.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <i class="fas fa-times-circle text-red-400 mt-0.5"></i>
+                            <p class="text-xs text-slate-600">Last-minute cancellations with no fallback</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <i class="fas fa-times-circle text-red-400 mt-0.5"></i>
+                            <p class="text-xs text-slate-600">Clinics unaware of online bookings</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <i class="fas fa-times-circle text-red-400 mt-0.5"></i>
+                            <p class="text-xs text-slate-600">Availability mismatches between platform and clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Jobs To Be Done</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Reliability before uncertainty</p>
+                                <p class="text-xs text-slate-500">When I need a doctor, I want a reliable appointment so I can avoid the uncertainty of showing up to a cancelled or unaware clinic.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Clear confirmation to eliminate double-checking</p>
+                                <p class="text-xs text-slate-500">When I book online, I want clear, trusted confirmation so I don't need to call the clinic to verify — eliminating the offline double-check habit.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">3</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Instant recovery when things go wrong</p>
+                                <p class="text-xs text-slate-500">When something goes wrong, I want instant resolution — rebooking, refund, or support — so I can still receive my consultation without starting over.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Solutions (RICE Prioritised)</h3>
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-2xl border border-blue-100 bg-blue-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-blue-500 text-white text-xs font-black flex items-center justify-center">1</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Smart Verified Slots (AI-Powered)</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded-full">Before Booking</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full">High Reach · High Impact</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600">Highlight doctors with near-zero cancellation rates using AI reliability scoring. Users can instantly identify trustworthy slots before committing — building confidence at the discovery stage.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-purple-500 text-white text-xs font-black flex items-center justify-center">2</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Instant Support Hub (AI + Human)</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded-full">After Failure</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full">High Impact at Failure Moments</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600">A quick-action recovery hub offering one-tap rebooking, refund initiation, or live support when an appointment fails. Reduces the emotional cost of failure and keeps users on the platform instead of reverting offline.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-amber-100 bg-amber-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-black flex items-center justify-center">3</span>
+                                    <h4 class="font-bold text-sm text-slate-800">User-Approved Backup Booking</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-amber-100 text-amber-700 rounded-full">During Booking</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Medium Reach · High Impact</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600">At the time of booking, offer a fallback appointment option with full user control — not auto-assigned. Ensures users always have a safety net without feeling like the product has made choices for them.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-slate-100 bg-slate-50/60">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-black flex items-center justify-center">4</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Clinic Confirmation Status Display</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Confirmation</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Medium Impact · High Effort</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600">Surface a clear <strong>Confirmed</strong> or <strong>Pending</strong> status on the booking screen so users always know whether the clinic has acknowledged their appointment — no more guessing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Outcome</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-blue-500 mb-1">Before Booking</p>
+                            <p class="text-sm font-bold text-slate-800">Confidence</p>
+                            <p class="text-xs text-slate-500 mt-1">AI-verified slots build trust at discovery</p>
+                        </div>
+                        <div class="p-4 bg-amber-50 rounded-2xl border border-amber-100 text-center">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-amber-500 mb-1">During Booking</p>
+                            <p class="text-sm font-bold text-slate-800">Control</p>
+                            <p class="text-xs text-slate-500 mt-1">Backup options give users agency, not anxiety</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-100 text-center">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-emerald-500 mb-1">After Failure</p>
+                            <p class="text-sm font-bold text-slate-800">Recovery</p>
+                            <p class="text-xs text-slate-500 mt-1">Support Hub keeps users on platform, not offline</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-slate-900 rounded-2xl text-white">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-2">Key Learning</p>
+                    <p class="text-sm leading-relaxed">In healthcare, trust is the product — not just a feature. Every interaction either builds or erodes a user's willingness to rely on the platform for something as important as their health. The design challenge is not to make booking faster, but to make it feel safe.</p>
+                </div>
+            `,
+
+            'learning-system': () => `
+                <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 text-[10px] font-black uppercase tracking-widest mb-4">
+                            <i class="fas fa-graduation-cap"></i> Edtech · AI/ML · System Design
+                        </div>
+                        <h2 class="text-4xl font-extrabold mb-2 tracking-tight">Edtech APP: Personalized Learning</h2>
+                        <p class="text-slate-500 text-sm max-w-xl">An AI-powered personalized learning recommendation system designed for 3 personas — solving cold-start problems, choice paralysis, and content quality trade-offs through privacy-first personalization and adaptive learning paths.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 shrink-0 pr-10">
+                        <a href="https://drive.google.com/file/d/1RV0V1Z7vPznAimEgLNBBVtzNMp5ja23-/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-xl font-bold text-xs text-emerald-700 hover:bg-emerald-600 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-chalkboard"></i> Presentation Deck
+                        </a>
+                        <a href="https://drive.google.com/file/d/1nv-yBci-eKmexYJ7rVDC-oGWilOaioK3/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-700 hover:bg-slate-900 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-file-alt"></i> Detailed Report
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">3 Persona Framework</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="p-5 bg-emerald-50 rounded-2xl border border-emerald-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-emerald-600 mb-2">Persona 1 · Learner</p>
+                            <ul class="space-y-1.5">
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-emerald-400 mt-0.5"></i>AI course recommendations by interest &amp; skill level</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-emerald-400 mt-0.5"></i>Career goal-aligned learning paths</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-emerald-400 mt-0.5"></i>Gamified progress — badges, milestones, leaderboards</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-emerald-400 mt-0.5"></i>Skill assessment quiz to solve cold-start</li>
+                            </ul>
+                        </div>
+                        <div class="p-5 bg-blue-50 rounded-2xl border border-blue-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-2">Persona 2 · Instructor</p>
+                            <ul class="space-y-1.5">
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-blue-400 mt-0.5"></i>Course upload with videos, PDFs &amp; quizzes</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-blue-400 mt-0.5"></i>Audience targeting via skill &amp; interest matching</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-blue-400 mt-0.5"></i>Engagement analytics — drop-offs &amp; completion rates</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-blue-400 mt-0.5"></i>Live classes &amp; webinars for real-time interaction</li>
+                            </ul>
+                        </div>
+                        <div class="p-5 bg-purple-50 rounded-2xl border border-purple-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-purple-600 mb-2">Persona 3 · Admin</p>
+                            <ul class="space-y-1.5">
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-purple-400 mt-0.5"></i>Recommendation engine configuration &amp; tuning</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-purple-400 mt-0.5"></i>Drop-off &amp; funnel analysis dashboard</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-purple-400 mt-0.5"></i>Content quality management &amp; moderation</li>
+                                <li class="text-xs text-slate-600 flex gap-2"><i class="fas fa-check text-purple-400 mt-0.5"></i>A/B testing on recommendation strategies</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            `;
 
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Key Design Trade-offs</h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Personalization vs Privacy</p>
+                                <p class="text-xs text-slate-500 mb-2">Deeper personalization requires more user data — but too much collection erodes trust. Resolved with a <strong>privacy-first personalization</strong> approach: opt-in enhanced personalization, anonymous feedback, progressive data collection, and explainable recommendations ("Because you completed X").</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-800 mb-1">Content Quality vs Content Supply</p>
+                                <p class="text-xs text-slate-500">More instructors = more variety, but risks poor learner experience. Resolved by prioritising quality over quantity — content moderation, completion-rate-based ranking, and limiting visibility of low-performing courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Core Features Built</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Skill Assessment Quiz</p>
+                            <p class="text-[10px] text-slate-500">Solves cold-start at onboarding</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Adaptive Learning Path</p>
+                            <p class="text-[10px] text-slate-500">Evolves based on progress &amp; performance</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Gamified Progress</p>
+                            <p class="text-[10px] text-slate-500">Badges, milestones &amp; leaderboards</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Recommendation Engine</p>
+                            <p class="text-[10px] text-slate-500">AI-driven, admin-configurable weights</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Anonymous Feedback</p>
+                            <p class="text-[10px] text-slate-500">Honest input with spam detection</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Instructor Analytics</p>
+                            <p class="text-[10px] text-slate-500">Drop-offs, completion &amp; engagement</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">Live Classes</p>
+                            <p class="text-[10px] text-slate-500">&lt;300ms latency real-time sessions</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <p class="text-xs font-bold text-slate-800 mb-0.5">A/B Testing Platform</p>
+                            <p class="text-[10px] text-slate-500">Continuous recommendation optimisation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Future Roadmap</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        <div class="flex items-start gap-2 p-3 bg-emerald-50 rounded-xl"><i class="fas fa-robot text-emerald-400 text-xs mt-0.5"></i><p class="text-xs text-slate-700 font-medium">AI-Powered Learning Assistant (personal tutor)</p></div>
+                        <div class="flex items-start gap-2 p-3 bg-emerald-50 rounded-xl"><i class="fas fa-robot text-emerald-400 text-xs mt-0.5"></i><p class="text-xs text-slate-700 font-medium">Deep Learning models for hyper-personalised journeys</p></div>
+                        <div class="flex items-start gap-2 p-3 bg-emerald-50 rounded-xl"><i class="fas fa-robot text-emerald-400 text-xs mt-0.5"></i><p class="text-xs text-slate-700 font-medium">Mentor-based 1:1 learning &amp; career coaching</p></div>
+                        <div class="flex items-start gap-2 p-3 bg-emerald-50 rounded-xl"><i class="fas fa-robot text-emerald-400 text-xs mt-0.5"></i><p class="text-xs text-slate-700 font-medium">Advanced gamification — streaks, XP &amp; cohort leaderboards</p></div>
+                        <div class="flex items-start gap-2 p-3 bg-emerald-50 rounded-xl"><i class="fas fa-robot text-emerald-400 text-xs mt-0.5"></i><p class="text-xs text-slate-700 font-medium">Community &amp; social learning — peer groups &amp; forums</p></div>
+                        <div class="flex items-start gap-2 p-3 bg-emerald-50 rounded-xl"><i class="fas fa-robot text-emerald-400 text-xs mt-0.5"></i><p class="text-xs text-slate-700 font-medium">Multi-language &amp; regional personalisation</p></div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-slate-900 rounded-2xl text-white">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-emerald-400 mb-2">Strategic Insight</p>
+                    <p class="text-sm leading-relaxed">The system balances personalization with user privacy and content supply with quality — ensuring scalable growth while maintaining trust, relevance, and a high-quality learning experience. The real unlock is making the recommendation engine smarter over time: more data leads to better personalization, which drives higher completion rates, which attracts better instructors, which compounds platform quality.</p>
+                </div>
+            `,
+
+            'fitness-app': () => `
+                <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-600 text-[10px] font-black uppercase tracking-widest mb-4">
+                            <i class="fas fa-heartbeat"></i> VitaFit · PRD · MoveTogether+
+                        </div>
+                        <h2 class="text-4xl font-extrabold mb-2 tracking-tight">Fitness App (VitaFit)</h2>
+                        <p class="text-slate-500 text-sm max-w-xl">A full PRD for MoveTogether+ — a 4-feature engagement system designed to solve the 80% 30-day drop-off problem through a behavioral loop of personalization, competition, rewards, and social accountability.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 shrink-0 pr-10">
+                        <a href="https://blend-draft-15080245.figma.site/" target="_blank" class="px-4 py-2 bg-purple-50 border border-purple-200 rounded-xl font-bold text-xs text-purple-700 hover:bg-purple-600 hover:text-white transition flex items-center gap-2">
+                            <i class="fab fa-figma"></i> Wireframes
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Uaa0KP1w87OyuuiahM4kQMkPTTCuNdfq/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs text-slate-700 hover:bg-slate-900 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-file-alt"></i> Detailed Report
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">The Problem</h3>
+                    <div class="p-6 bg-red-50 rounded-2xl border border-red-100 mb-4">
+                        <p class="text-sm text-slate-700 leading-relaxed">Nearly <strong>80% of fitness app users drop off within 30 days</strong>. The platform faces three compounding issues: motivation drops after the first few sessions, on-demand workouts feel impersonal with no instructor connection, and there are no external triggers or social accountability mechanisms to keep users consistent.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <i class="fas fa-times-circle text-red-400 mt-0.5 shrink-0"></i>
+                            <p class="text-xs text-slate-600">Motivation drops after a few sessions — no habit formed</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <i class="fas fa-times-circle text-red-400 mt-0.5 shrink-0"></i>
+                            <p class="text-xs text-slate-600">On-demand workouts feel impersonal — weak instructor connection</p>
+                        </div>
+                        <div class="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <i class="fas fa-times-circle text-red-400 mt-0.5 shrink-0"></i>
+                            <p class="text-xs text-slate-600">No social accountability — users quit with no external trigger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Target Audience</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="p-5 bg-purple-50 rounded-2xl border border-purple-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-purple-600 mb-2">Primary · Working Professionals (23–40)</p>
+                            <p class="text-xs text-slate-600">Busy schedules, need motivation to maintain consistency, prefer flexible online workouts that fit around their routine.</p>
+                        </div>
+                        <div class="p-5 bg-pink-50 rounded-2xl border border-pink-100">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-pink-600 mb-2">Secondary · Gen Z Fitness Enthusiasts (18–25)</p>
+                            <p class="text-xs text-slate-600">Competitive and socially active, motivated by rewards and leaderboards, interested in community-driven experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">4 Features — RICE Prioritised</h3>
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-purple-500 text-white text-xs font-black flex items-center justify-center">1</span>
+                                    <h4 class="font-bold text-sm text-slate-800">AI Instructor Match</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded-full">High Reach · High Impact</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Moderate Effort</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 mb-2">Recommends instructors based on workout history, preferred workout types, ratings, and session completion rates. Addresses the core problem of impersonal on-demand content.</p>
+                            <div class="p-2 bg-white rounded-xl border border-purple-100 inline-block">
+                                <p class="text-[10px] text-slate-500 italic">"Since you enjoyed Riya's Power Yoga, try Anita's Morning Flow."</p>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-blue-100 bg-blue-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-blue-500 text-white text-xs font-black flex items-center justify-center">2</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Community Challenges</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded-full">High Reach · High Confidence</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Low Effort</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600">Time-bound challenges — 7-Day Yoga Reset, 15-Day Consistency Challenge, 100-Day MoveTogether — with leaderboards, progress tracking, and grand rewards (smartphones, fitness gadgets). Shared goals create strong motivation loops.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-amber-100 bg-amber-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-black flex items-center justify-center">3</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Gamification &amp; Rewards</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-amber-100 text-amber-700 rounded-full">High Reach · High Confidence</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Low Effort</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600">Streak tracking, badge unlocks, and scratch-card rewards triggered at 15-day streaks, challenge completion, and badge milestones. Rewards include ₹100 coupons (Zomato / Swiggy / Blinkit), free classes, and partner discounts.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-pink-100 bg-pink-50/40">
+                            <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-pink-500 text-white text-xs font-black flex items-center justify-center">4</span>
+                                    <h4 class="font-bold text-sm text-slate-800">Workout Buddy &amp; Instructor Squads</h4>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-pink-100 text-pink-700 rounded-full">Moderate Reach &amp; Impact</span>
+                                    <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Moderate Effort</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 mb-2">Accountability partners with shared streak tracking and buddy reminders. Instructor-led squads (e.g., Riya's Yoga Tribe) for progress sharing, Q&amp;A, joint challenges, and shoutouts. Creates the social layer that drives long-term retention.</p>
+                            <div class="p-2 bg-white rounded-xl border border-pink-100 inline-block">
+                                <p class="text-[10px] text-slate-500 italic">"Your buddy Rahul completed today's workout."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Success Metrics</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        <div class="p-3 bg-purple-50 rounded-xl border border-purple-100 text-center">
+                            <p class="text-[10px] text-slate-400 mb-1">Weekly Sessions</p>
+                            <p class="text-sm font-bold text-slate-800">2 → 3.5 sessions</p>
+                        </div>
+                        <div class="p-3 bg-purple-50 rounded-xl border border-purple-100 text-center">
+                            <p class="text-[10px] text-slate-400 mb-1">30-Day Retention</p>
+                            <p class="text-sm font-bold text-slate-800">+20% improvement</p>
+                        </div>
+                        <div class="p-3 bg-purple-50 rounded-xl border border-purple-100 text-center">
+                            <p class="text-[10px] text-slate-400 mb-1">Challenge Participation</p>
+                            <p class="text-sm font-bold text-slate-800">40% of user base</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                            <p class="text-[10px] text-slate-400 mb-1">Instructor CTR</p>
+                            <p class="text-xs font-bold text-slate-600">Recommendation click-through</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                            <p class="text-[10px] text-slate-400 mb-1">Reward Redemption</p>
+                            <p class="text-xs font-bold text-slate-600">Scratch card usage rate</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                            <p class="text-[10px] text-slate-400 mb-1">Buddy Completion</p>
+                            <p class="text-xs font-bold text-slate-600">Joint workout rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-slate-900 rounded-2xl text-white">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-purple-400 mb-2">Key Insight</p>
+                    <p class="text-sm leading-relaxed">Sustaining engagement in fitness platforms requires a combination of personalization, motivation, and social accountability. MoveTogether+ addresses this by creating a behavioral engagement loop: <span class="text-purple-300 font-bold">Personalization → Motivation → Rewards → Social Accountability</span> — transforming workouts from an occasional activity into a consistent habit.</p>
+                </div>
+            `
+        };
+
+        function openCaseStudy(id) {
+            const fn = caseStudies[id];
+            if (!fn) return;
+            const modal = document.getElementById('caseStudyModal');
+            document.getElementById('modalData').innerHTML = fn();
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden';
-            setTimeout(() => { 
-                document.getElementById('modalContent').classList.remove('translate-y-8', 'opacity-0'); 
-                document.getElementById('modalContent').classList.add('translate-y-0', 'opacity-100'); 
+            setTimeout(() => {
+                document.getElementById('modalContent').classList.remove('translate-y-8', 'opacity-0');
+                document.getElementById('modalContent').classList.add('translate-y-0', 'opacity-100');
             }, 10);
         }
 
